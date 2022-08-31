@@ -6,6 +6,7 @@
 let btn = document.getElementById('increment-btn');
 let reset = document.getElementById('reset');
 let count = document.getElementById('count-el');
+let save = document.getElementById('save')
 
 
 
@@ -17,4 +18,14 @@ reset.addEventListener('click', () =>{
     count.innerHTML = 0;
 });
 
+save.addEventListener('click', () => {
+    console.log(count.innerHTML);
+})
+
+
+const greeting = 'Hello! My name is '
+const myName = 'Łukasz Cena.'
+const myGreeting = greeting + myName;
+
+console.log(myGreeting)
 
